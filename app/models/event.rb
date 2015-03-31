@@ -13,22 +13,6 @@ class Event < ActiveRecord::Base
     validates :end_time, :presence => true
     validates :location, :presence => true
 
-    # validates_assoicated :university, 
-
-    def get_address
-      return address
-    end
-
-    # checks if event name is already taken
-    def self.valid_event_name(event_name)
-        
-      if self.where("name=" + "'" + event_name + "'").empty?
-        return true
-      else
-        return false
-      end
-
-    end
 
     def get_categories
       category_names = []
@@ -72,48 +56,57 @@ class Event < ActiveRecord::Base
 
     def self.get_events_by_category(category_id)
         result = []
-#        u_id = 1 
+        
+        event_today = []
+        event_this_week = []
+        event_this_month = []
+        later_events = []
 
         #datatype sqlstr as string
-        sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, event_times.start_time"
-        sqlstr = sqlstr + " FROM ( (events INNER JOIN events_to_event_categories ON events.id = events_to_event_categories.event_id) "
-        sqlstr = sqlstr + " INNER JOIN event_times ON events.id = event_times.event_id )"
-        sqlstr = sqlstr + " INNER JOIN universities ON events.university_id = universities.id "
-        sqlstr = sqlstr + " WHERE events_to_event_categories.event_category_id = " + category_id.to_s    
-        sqlstr = sqlstr + " and event_times.start_time >= " + "'" + DateTime.now.to_s + "'"    
- #       sqlstr = sqlstr + " and universities.id = " + u_id.to_s
 
-        #my_query = "select events.*, events_to_event_categories.* from events inner join events_to_event_categories on events.id = events_to_event_categories.event_id where events_to_event_categories.event_category_id  " 
-        
         @connection = ActiveRecord::Base.connection
 
-        if category_id == "0"
-          result = @connection.exec_query(sqlstr + "> 0")
-          result = Event.first(500)
+        if category_id.to_s == "0"
+
+          sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, event_times.start_time"
+          sqlstr = sqlstr + " FROM ((events INNER JOIN events_to_event_categories ON events.id = events_to_event_categories.event_id) "
+          sqlstr = sqlstr + " INNER JOIN event_times ON events.id = event_times.event_id)"
+          sqlstr = sqlstr + " INNER JOIN universities ON events.university_id = universities.id "
+          sqlstr = sqlstr + " WHERE event_times.start_time >= " + "'" + DateTime.now.to_s + "'"    
+          
+          result = @connection.exec_query(sqlstr)
           
         else
+          sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, event_times.start_time"
+          sqlstr = sqlstr + " FROM ((events INNER JOIN events_to_event_categories ON events.id = events_to_event_categories.event_id) "
+          sqlstr = sqlstr + " INNER JOIN event_times ON events.id = event_times.event_id)"
+          sqlstr = sqlstr + " INNER JOIN universities ON events.university_id = universities.id "
+          sqlstr = sqlstr + " WHERE events_to_event_categories.event_category_id = " + category_id.to_s    
+          sqlstr = sqlstr + " and event_times.start_time >= " + "'" + DateTime.now.to_s + "'"    
+#        sqlstr = sqlstr + " and universities.id = " + university_id.to_s
+          
           result = @connection.exec_query(sqlstr)
         end
 
-        return result
-#      result.each do |row|
-#        puts row
-#      end
+        result.each do |event|
+          if event['start_time'].to_date == DateTime.now.to_date
+            event_today << event
+          elsif event['start_time'].to_date.strftime("%U") == DateTime.now.strftime("%U")
+            event_this_week << event
+          elsif event['start_time'].to_date.strftime("%m") == DateTime.now.strftime("%m")
+            event_this_month << event
+          else
+            later_events << event
+          end
 
- #     if (category_id == "0")
- #       return Event.first(500)
- #     else
- #       event_ids = EventsToEventCategory.select("event_id").where(event_category_id: category_id)
- #       events = []
+        end
 
- #       event_ids.each do |event_id|
- #         events.push Event.find(event_id.event_id)
- #       end
+        all_events = {'event_today' => event_today, 
+                      'event_this_week' => event_this_week, 
+                      'event_this_month' => event_this_month, 
+                      'later_events' => later_events}
 
- #       return events
- #     end
-
-      
+        return all_events
     end
 
 end

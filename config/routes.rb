@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   get 'events/:id', to: 'events#show'
   patch 'events/:id', to: 'events#update'
 
-  get 'event_category/:id', to: 'events#show_event_by_category'
+  get '/event_category/:id', to: 'events#show_event_by_category'
+
 
   get 'event_categories', to: 'event_categories#index'
   get 'universities', to: 'universities#index'
