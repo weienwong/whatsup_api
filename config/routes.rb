@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get '/event_category/:id', to: 'events#show_event_by_category'
 
+  get '/event_category/:category_id/university/:university_id', to: 'events#get_events_by_category_and_university'
+
 
   get 'event_categories', to: 'event_categories#index'
   get 'universities', to: 'universities#index'

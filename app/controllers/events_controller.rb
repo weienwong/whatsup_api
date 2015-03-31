@@ -6,25 +6,6 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-
-#    @events_output = []
-#    @events = Event.first(500)
-#
-#    @events.each{ |event|
-#
-#      if event.get_closest_start_time != [] and event.get_closest_start_time != nil
-#
-#        @events_output.push({
-#                          "event_id" => event.id,
-#                          "event_name" => event.name, 
-#                          "university" => event.university.name,
-#                          "website" => event.website,
-#                          "closest_start_time" => event.get_closest_start_time,
-#
-#                          })
-#      end
-#    }
-#    render json: @events_output
     
     render json: Event.get_events_by_category(0)
 
@@ -119,7 +100,21 @@ class EventsController < ApplicationController
     events_by_category = Event.get_events_by_category(category_id)
     
     render json: events_by_category
+
   end
+
+  def get_events_by_category_and_university
+    category_id = params[:category_id]
+    university_id = params[:university_id]
+
+    Event.get_events_by_category_university(category_id, university_id)
+
+    #render json: {'category_id' => category_id, 'university_id' => university_id}
+    render json: Event.get_events_by_category_university(category_id, university_id)
+    
+
+  end
+
 
 
   private
