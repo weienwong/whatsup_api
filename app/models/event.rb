@@ -90,8 +90,11 @@ class Event < ActiveRecord::Base
         result.each do |event|
           if event['start_time'].to_date == DateTime.now.to_date
             event_today << event
+            event_this_week << event
+            event_this_month << event
           elsif event['start_time'].to_date.strftime("%U") == DateTime.now.strftime("%U")
             event_this_week << event
+            event_this_month << event
           elsif event['start_time'].to_date.strftime("%m") == DateTime.now.strftime("%m")
             event_this_month << event
           else
