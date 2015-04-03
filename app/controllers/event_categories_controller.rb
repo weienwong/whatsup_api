@@ -6,7 +6,14 @@ class EventCategoriesController < ApplicationController
   def index
     @event_categories = EventCategory.select("id, category_name")
 
-    render json: @event_categories
+    pluralize_categories = []
+
+    @event_categories.each do |c| 
+      pluralize_categories << {:id => c["id"], :category_name => c.category_name.to_s.pluralize}
+    end
+
+    render json: pluralize_categories
+#    render json: @event_categories
   end
 
   # GET /event_categories/1

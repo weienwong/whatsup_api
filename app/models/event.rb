@@ -68,7 +68,7 @@ class Event < ActiveRecord::Base
 
         if category_id.to_s == "0"
 
-          sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, event_times.start_time"
+          sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, events.location, event_times.start_time"
           sqlstr = sqlstr + " FROM ((events INNER JOIN events_to_event_categories ON events.id = events_to_event_categories.event_id) "
           sqlstr = sqlstr + " INNER JOIN event_times ON events.id = event_times.event_id)"
           sqlstr = sqlstr + " INNER JOIN universities ON events.university_id = universities.id "
@@ -77,7 +77,7 @@ class Event < ActiveRecord::Base
           result = @connection.exec_query(sqlstr)
           
         else
-          sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, event_times.start_time"
+          sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, events.location, event_times.start_time"
           sqlstr = sqlstr + " FROM ((events INNER JOIN events_to_event_categories ON events.id = events_to_event_categories.event_id) "
           sqlstr = sqlstr + " INNER JOIN event_times ON events.id = event_times.event_id)"
           sqlstr = sqlstr + " INNER JOIN universities ON events.university_id = universities.id "
@@ -86,6 +86,8 @@ class Event < ActiveRecord::Base
           
           result = @connection.exec_query(sqlstr)
         end
+
+
 
         result.each do |event|
           if event['start_time'].to_date == DateTime.now.to_date
