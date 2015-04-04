@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150328150229) do
+ActiveRecord::Schema.define(version: 20150404034713) do
 
   create_table "addresses", force: true do |t|
     t.string   "building_name"
@@ -55,9 +55,7 @@ ActiveRecord::Schema.define(version: 20150328150229) do
     t.datetime "updated_at"
     t.integer  "university_id"
     t.text     "description"
-    t.datetime "start_time"
-    t.datetime "end_time"
-    t.string   "location"
+    t.string   "department"
     t.text     "website"
     t.integer  "address_id"
   end

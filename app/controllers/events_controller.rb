@@ -111,12 +111,14 @@ class EventsController < ApplicationController
 
     #render json: {'category_id' => category_id, 'university_id' => university_id}
     render json: Event.get_events_by_category_university(category_id, university_id)
-    
-
   end
 
-
-
+  def get_events_by_time
+    time = params[:when]
+    category_id = params[:category_id]
+    render json: Event.get_events_by_time_category(time, category_id)
+  end
+  
   private
 
     def set_event

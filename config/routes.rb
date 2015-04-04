@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 #  resources :addresses, except: [:new, :edit]
 #  resources :event_categories, except: [:new, :edit]
-  get 'events', to: 'events#index'
+#  get 'events', to: 'events#index'
   post 'events', to: 'events#create'
   get 'events/:id', to: 'events#show'
   patch 'events/:id', to: 'events#update'
@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get '/event_category/:id', to: 'events#show_event_by_category'
 
   get '/event_category/:category_id/university/:university_id', to: 'events#get_events_by_category_and_university'
+
+  get '/events/', to: 'events#get_events_by_time'
 
 
   get 'event_categories', to: 'event_categories#index'

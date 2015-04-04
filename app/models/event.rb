@@ -23,37 +23,6 @@ class Event < ActiveRecord::Base
 
     end
 
-    def get_times
-      event_time_list = []
-
-      event_times.each do |time|
-        start_time = time.start_time
-        end_time = time.end_time
-    
-        event_time_list << {'start_time' => start_time, 'end_time' => end_time}
-
-      end
-
-      return event_time_list
-      
-    end
-
-    def get_closest_start_time
-
-      event_times.each do |time|
-        start_time = time.start_time
-
-        if DateTime.now <= start_time
-          return start_time
-        else
-          return nil
-        end
-
-      end
-    end
-
-
-
     def self.get_events_by_category(category_id)
         result = []
         
@@ -68,35 +37,29 @@ class Event < ActiveRecord::Base
 
         if category_id.to_s == "0"
 
-          sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, events.location, event_times.start_time"
+          sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, events.department, event_times.start_time"
           sqlstr = sqlstr + " FROM ((events INNER JOIN events_to_event_categories ON events.id = events_to_event_categories.event_id) "
           sqlstr = sqlstr + " INNER JOIN event_times ON events.id = event_times.event_id)"
           sqlstr = sqlstr + " INNER JOIN universities ON events.university_id = universities.id "
           sqlstr = sqlstr + " WHERE event_times.start_time >= " + "'" + DateTime.now.to_s + "'"    
-          
           result = @connection.exec_query(sqlstr)
-          
         else
-          sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, events.location, event_times.start_time"
+          sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, events.department, event_times.start_time"
           sqlstr = sqlstr + " FROM ((events INNER JOIN events_to_event_categories ON events.id = events_to_event_categories.event_id) "
           sqlstr = sqlstr + " INNER JOIN event_times ON events.id = event_times.event_id)"
           sqlstr = sqlstr + " INNER JOIN universities ON events.university_id = universities.id "
           sqlstr = sqlstr + " WHERE events_to_event_categories.event_category_id = " + category_id.to_s    
           sqlstr = sqlstr + " and event_times.start_time >= " + "'" + DateTime.now.to_s + "'"    
-          
           result = @connection.exec_query(sqlstr)
         end
 
-
-
+        result = @connection.exec_query(sqlstr)
+        
         result.each do |event|
           if event['start_time'].to_date == DateTime.now.to_date
             event_today << event
-            event_this_week << event
-            event_this_month << event
           elsif event['start_time'].to_date.strftime("%U") == DateTime.now.strftime("%U")
             event_this_week << event
-            event_this_month << event
           elsif event['start_time'].to_date.strftime("%m") == DateTime.now.strftime("%m")
             event_this_month << event
           else
@@ -112,6 +75,7 @@ class Event < ActiveRecord::Base
 
         return all_events
     end
+
 
     def self.get_events_by_category_university(category_id, university_id)
         
@@ -176,5 +140,66 @@ class Event < ActiveRecord::Base
 
         return all_events
     end
+    
+    def self.get_events_by_time_category(time_period, category_id)
+      result = [] 
+      @connection = ActiveRecord::Base.connection
 
+      sqlstr = "SELECT distinct events.name as event_name, events.website, universities.name as university, events.department, event_times.start_time"
+      sqlstr = sqlstr + " FROM ((events INNER JOIN events_to_event_categories ON events.id = events_to_event_categories.event_id) "
+      sqlstr = sqlstr + " INNER JOIN event_times ON events.id = event_times.event_id)"
+      sqlstr = sqlstr + " INNER JOIN universities ON events.university_id = universities.id "
+      
+      if category_id.to_s == '0'
+        if time_period == 'today'
+            sqlstr = sqlstr + " WHERE strftime('%d', event_times.start_time) == strftime('%d', date('now'))"
+            result = @connection.exec_query(sqlstr)
+
+        elsif time_period == 'week'
+            sqlstr = sqlstr + " WHERE strftime('%U', event_times.start_time) == strftime('%U', date('now'))"    
+            result = @connection.exec_query(sqlstr)
+
+        elsif time_period == 'month'
+            sqlstr = sqlstr + " WHERE strftime('%m', event_times.start_time) == strftime('%m', date('now'))"
+            result = @connection.exec_query(sqlstr)
+
+        elsif time_period == 'later'
+            sqlstr = sqlstr + " WHERE strftime('%m', event_times.start_time) > strftime('%m', date('now'))"
+            result = @connection.exec_query(sqlstr)
+
+        else
+          return []
+        end
+
+      else
+        if time_period == 'today'
+            sqlstr = sqlstr + " WHERE events_to_event_categories.event_category_id = " + category_id.to_s    
+            sqlstr = sqlstr + " and strftime('%d', event_times.start_time) == strftime('%d', date('now'))"
+            result = @connection.exec_query(sqlstr)
+
+        elsif time_period == 'week'
+            sqlstr = sqlstr + " WHERE events_to_event_categories.event_category_id = " + category_id.to_s    
+            sqlstr = sqlstr + " and strftime('%U', event_times.start_time) == strftime('%U', date('now'))"
+            result = @connection.exec_query(sqlstr)
+
+        elsif time_period == 'month'
+            sqlstr = sqlstr + " WHERE events_to_event_categories.event_category_id = " + category_id.to_s    
+            sqlstr = sqlstr + " and strftime('%m', event_times.start_time) == strftime('%m', date('now'))"
+            result = @connection.exec_query(sqlstr)
+
+        elsif time_period == 'later'
+            sqlstr = sqlstr + " WHERE events_to_event_categories.event_category_id = " + category_id.to_s    
+            sqlstr = sqlstr + " and strftime('%m', event_times.start_time) > strftime('%m', date('now'))"
+            result = @connection.exec_query(sqlstr)
+
+        else
+          return []
+        end
+
+      end
+
+      return result
+    end
+
+    
 end
