@@ -157,10 +157,12 @@ class Event < ActiveRecord::Base
 
         elsif time_period == 'week'
             sqlstr = sqlstr + " WHERE strftime('%U', event_times.start_time) == strftime('%U', date('now'))"    
+            sqlstr = sqlstr + " AND event_times.start_time >= date('now')"    
             result = @connection.exec_query(sqlstr)
 
         elsif time_period == 'month'
             sqlstr = sqlstr + " WHERE strftime('%m', event_times.start_time) == strftime('%m', date('now'))"
+            sqlstr = sqlstr + " AND event_times.start_time >= date('now')"    
             result = @connection.exec_query(sqlstr)
 
         elsif time_period == 'later'
@@ -180,11 +182,13 @@ class Event < ActiveRecord::Base
         elsif time_period == 'week'
             sqlstr = sqlstr + " WHERE events_to_event_categories.event_category_id = " + category_id.to_s    
             sqlstr = sqlstr + " and strftime('%U', event_times.start_time) == strftime('%U', date('now'))"
+            sqlstr = sqlstr + " AND event_times.start_time >= date('now')"    
             result = @connection.exec_query(sqlstr)
 
         elsif time_period == 'month'
             sqlstr = sqlstr + " WHERE events_to_event_categories.event_category_id = " + category_id.to_s    
             sqlstr = sqlstr + " and strftime('%m', event_times.start_time) == strftime('%m', date('now'))"
+            sqlstr = sqlstr + " AND event_times.start_time >= date('now')"    
             result = @connection.exec_query(sqlstr)
 
         elsif time_period == 'later'
