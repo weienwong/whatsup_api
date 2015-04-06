@@ -20,7 +20,6 @@ class Event < ActiveRecord::Base
         category_names.push category.category_name
       end
       return category_names
-
     end
 
     def self.get_events_by_category(category_id)
@@ -78,7 +77,6 @@ class Event < ActiveRecord::Base
 
 
     def self.get_events_by_category_university(category_id, university_id)
-        
         result = []
         
         event_today = []
@@ -152,11 +150,12 @@ class Event < ActiveRecord::Base
       
       if category_id.to_s == '0'
         if time_period == 'today'
-            sqlstr = sqlstr + " WHERE strftime('%d', event_times.start_time) == strftime('%d', date('now'))"
+            sqlstr = sqlstr + " WHERE event_times.start_time >= date('now') "
+            sqlstr = sqlstr + " AND date(event_times.start_time) == date('now')"    
             result = @connection.exec_query(sqlstr)
 
         elsif time_period == 'week'
-            sqlstr = sqlstr + " WHERE strftime('%U', event_times.start_time) == strftime('%U', date('now'))"    
+            sqlstr = sqlstr + " WHERE strftime('%W', event_times.start_time) == strftime('%W', date('now'))"    
             sqlstr = sqlstr + " AND event_times.start_time >= date('now')"    
             result = @connection.exec_query(sqlstr)
 
@@ -176,7 +175,7 @@ class Event < ActiveRecord::Base
       else
         if time_period == 'today'
             sqlstr = sqlstr + " WHERE events_to_event_categories.event_category_id = " + category_id.to_s    
-            sqlstr = sqlstr + " and strftime('%d', event_times.start_time) == strftime('%d', date('now'))"
+            sqlstr = sqlstr + " AND date(event_times.start_time) == date('now')"    
             result = @connection.exec_query(sqlstr)
 
         elsif time_period == 'week'
@@ -203,6 +202,92 @@ class Event < ActiveRecord::Base
       end
 
       return result
+    end
+
+    def self.get_events_with_multiple_times(time_period, category_id)
+
+      events_after_now = EventTime.where("start_time >= ?", DateTime.now)
+
+      event_before = []
+
+      joined_events = Event.joins(:event_times, :university).where("start_time >= ?", DateTime.now)
+      event_results = []
+
+      if category_id.to_s == '0'
+        if time_period == 'today'
+          result = joined_events.where("start_time <= ? ", DateTime.now.end_of_day).distinct.select("events.*, universities.name as university_name").distinct.select("events.*, universities.name as university_name")
+          events_before = events_after_now.where("start_time <= ? ", DateTime.now.end_of_day)
+
+        elsif time_period == 'week'
+          result = joined_events.where("start_time <= ?", DateTime.now.end_of_week).distinct.select("events.*, universities.name as university_name").distinct.select("events.*, universities.name as university_name")
+          events_before = events_after_now.where("start_time <= ?", DateTime.now.end_of_week)
+
+        elsif time_period == 'month'
+          result = joined_events.where("start_time <= ?", DateTime.now.end_of_month).distinct.select("events.*, universities.name as university_name").distinct.select("events.*, universities.name as university_name")
+          events_before = events_after_now.where("start_time <= ?", DateTime.now.end_of_month)
+
+        elsif time_period == 'later'
+          result = joined_events.where("start_time > ?", DateTime.now.end_of_month).distinct.select("events.*, universities.name as university_name").distinct.select("events.*, universities.name as university_name")
+          events_before = events_after_now.where("start_time > ?", DateTime.now.end_of_month)
+
+        else
+          result = []
+        end
+
+      else
+        if time_period == 'today'
+          todays_events = joined_events.where("start_time <= ? ", DateTime.now.end_of_day)
+          todays_events_categories = todays_events.joins(:event_categories).where("event_category_id = ?", category_id)
+          result = todays_events_categories.distinct.select("events.*, universities.name as university_name")
+
+          events_before = events_after_now.where("start_time <= ? ", DateTime.now.end_of_day)
+
+        elsif time_period == 'week'
+          this_weeks_events = joined_events.where("start_time <= ?", DateTime.now.end_of_week)
+          this_weeks_events_categories = this_weeks_events.joins(:event_categories).where("event_category_id = ?", category_id)
+          result = this_weeks_events_categories.distinct.select("events.*, universities.name as university_name")
+          
+          events_before = events_after_now.where("start_time <= ?", DateTime.now.end_of_week)
+
+        elsif time_period == 'month'
+          this_months_events = joined_events.where("start_time <= ?", DateTime.now.end_of_month)        
+          this_months_events_categories = this_months_events.joins(:event_categories).where("event_category_id = ?", category_id)
+          result = this_months_events_categories.distinct.select("events.*, universities.name as university_name")
+          
+          events_before = events_after_now.where("start_time <= ?", DateTime.now.end_of_month)
+
+        elsif time_period == 'later'
+          later_events = joined_events.where("start_time > ?", DateTime.now.end_of_month)
+          later_events_categories = later_events.joins(:event_categories).where("event_category_id = ?", category_id)
+          result = later_events_categories.distinct.select("events.*, universities.name as university_name")
+          
+          events_before = events_after_now.where("start_time > ?", DateTime.now.end_of_month)
+
+        else
+        end
+
+      end
+
+
+      events_with_times = []
+
+      result.each do |r|
+
+        event_time_pairs = {"event" => r, "start_times" => []}
+
+        events_before.each do |t|
+          if r.id == t.event_id
+            event_time_pairs["start_times"] << t.start_time 
+          end
+        end
+
+        events_with_times << event_time_pairs
+
+      end
+
+      return events_with_times
+
+
     end
 
     

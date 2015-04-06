@@ -116,7 +116,8 @@ class EventsController < ApplicationController
   def get_events_by_time
     time = params[:when]
     category_id = params[:category_id]
-    render json: Event.get_events_by_time_category(time, category_id)
+    #render json: Event.get_events_by_time_category(time, category_id)
+    render json: Event.get_events_with_multiple_times(time, category_id)
   end
   
   private
