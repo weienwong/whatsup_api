@@ -8,7 +8,7 @@ gem 'rails-api'
 gem 'spring', :group => :development
 gem 'pg', '~>0.13.2'
 
-gem 'sqlite3'
+#gem 'sqlite3'
 gem 'middleman-protect-emails'
 gem 'uwaterlooapi', '~> 0.1.0'
 gem 'tilt', '~> 1.4.1'
