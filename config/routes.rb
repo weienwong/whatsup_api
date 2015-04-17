@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :job_info_sessions, except: [:new, :edit]
 #  resources :addresses, except: [:new, :edit]
 #  resources :event_categories, except: [:new, :edit]
 #  get 'events', to: 'events#index'

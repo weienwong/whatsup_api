@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employer: MyString
+  start_time: 2015-04-16 08:44:30
+  end_time: 2015-04-16 08:44:30
+  website: MyString
+  target_audience: MyText
+  description: MyText
+
+two:
+  employer: MyString
+  start_time: 2015-04-16 08:44:30
+  end_time: 2015-04-16 08:44:30
+  website: MyString
+  target_audience: MyText
+  description: MyText
