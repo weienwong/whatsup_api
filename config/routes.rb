@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :job_info_sessions, except: [:new, :edit]
+#  resources :job_info_sessions, except: [:new, :edit]
 #  resources :addresses, except: [:new, :edit]
 #  resources :event_categories, except: [:new, :edit]
 #  get 'events', to: 'events#index'
@@ -14,6 +14,11 @@ Rails.application.routes.draw do
 
   get '/events/', to: 'events#get_events_by_time'
 
+  get '/job_info_sessions', to: 'job_info_sessions#index'
+
+  get '/job_info_sessions_time', to: 'job_info_sessions#show_info_session_by_time'
+  get '/job_info_sessions_faculty', to: 'job_info_sessions#show_info_session_by_faculty'
+  get '/job_info_sessions_student_type', to: 'job_info_sessions#show_info_session_by_student_type'
 
   get 'event_categories', to: 'event_categories#index'
   get 'universities', to: 'universities#index'

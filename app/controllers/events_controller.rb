@@ -108,7 +108,6 @@ class EventsController < ApplicationController
     university_id = params[:university_id]
 
     Event.get_events_by_category_university(category_id, university_id)
-
     #render json: {'category_id' => category_id, 'university_id' => university_id}
     render json: Event.get_events_by_category_university(category_id, university_id)
   end

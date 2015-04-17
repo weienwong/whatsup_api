@@ -4,10 +4,55 @@ class JobInfoSessionsController < ApplicationController
   # GET /job_info_sessions
   # GET /job_info_sessions.json
   def index
-    @job_info_sessions = JobInfoSession.all.select(:employer, :start_time, :location, :website, :education_level, :student_type, :faculties)
 
-    render json: @job_info_sessions
+    time = ''
+    faculty = ''
+    student_type = ''
+
+    if !params[:time].nil?
+      time = params[:time]
+    end
+    
+    if !params[:faculty].nil?
+      faculty = params[:faculty]
+    end
+    
+    if !params[:student_type].nil?
+      student_type = params[:student_type]
+    end
+
+    result = []
+
+    if time != ''
+      result = JobInfoSession.show_session_by_time(time).show_session_by_faculty(faculty).show_session_by_student_type(student_type)
+    end
+
+    render json: result
+
   end
+
+  def show_info_session_by_time
+    time = params[:when]
+    result = JobInfoSession.show_session_by_time(time)
+    render json: result
+
+  end
+
+  def show_info_session_by_faculty
+    faculty = params[:faculty]
+    result = JobInfoSession.show_session_by_faculty(faculty)
+    render json: result
+  end
+
+  def show_info_session_by_student_type
+    student_type = params[:student_type]
+    result = JobInfoSession.show_session_by_student_type(student_type)
+
+    render json: result
+  end
+
+
+
 
   # GET /job_info_sessions/1
   # GET /job_info_sessions/1.json
