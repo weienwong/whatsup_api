@@ -16,7 +16,7 @@ class JobInfoSession < ActiveRecord::Base
 
     elsif time == 'later'
       later_sessions = JobInfoSession.where("start_time >= ?", DateTime.now.end_of_month).where("start_time <= ?", DateTime.now.end_of_month  + 1.month)
-      return later_sessions.select(:employer, :start_time, :end_time, :location, :website, :education_level, :student_type, :faculties)
+      return later_sessions.select(:id, :employer, :start_time, :end_time, :location, :website, :education_level, :student_type, :faculties)
     end
 
   end
