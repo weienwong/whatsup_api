@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
 
+#  resources :student_types, except: [:new, :edit]
+#  resources :faculties, except: [:new, :edit]
 #  resources :job_info_sessions, except: [:new, :edit]
 #  resources :addresses, except: [:new, :edit]
 #  resources :event_categories, except: [:new, :edit]
 #  get 'events', to: 'events#index'
-  post 'events', to: 'events#create'
+
+#  post 'events', to: 'events#create'
   get 'events/:id', to: 'events#show'
-  patch 'events/:id', to: 'events#update'
+#  patch 'events/:id', to: 'events#update'
 
   get '/event_category/:id', to: 'events#show_event_by_category'
 
@@ -20,6 +23,9 @@ Rails.application.routes.draw do
 
   get 'event_categories', to: 'event_categories#index'
   get 'universities', to: 'universities#index'
+
+  get 'student_types', to: 'student_types#index'
+  get 'faculties', to: 'faculties#index'
 
   #  resources :events, except: [:new, :edit]
   # The priority is based upon order of creation: first created -> highest priority.

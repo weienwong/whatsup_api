@@ -15,7 +15,7 @@ class JobInfoSession < ActiveRecord::Base
       result = JobInfoSession.where("start_time >= ?", DateTime.now.end_of_month).where("start_time <= ?", DateTime.now.end_of_month  + 1.month)
     end
 
-    return result.select(:id, :employer, :start_time, :end_time, :location, :website, :education_level, :student_type, :faculties)
+    return result.select(:id, :employer, :start_time, :end_time, :location, :website, :education_level, :student_type, :faculties).order(:start_time)
   end
   
   # faculty can be one of the following:

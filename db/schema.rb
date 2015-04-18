@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150417053134) do
+ActiveRecord::Schema.define(version: 20150418200754) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20150417053134) do
     t.string   "category_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "priority"
   end
 
   create_table "event_hosts", force: true do |t|
@@ -86,6 +87,13 @@ ActiveRecord::Schema.define(version: 20150417053134) do
   add_index "events_to_event_categories", ["event_category_id"], name: "index_events_to_event_categories_on_event_category_id", using: :btree
   add_index "events_to_event_categories", ["event_id"], name: "index_events_to_event_categories_on_event_id", using: :btree
 
+  create_table "faculties", force: true do |t|
+    t.string   "faculty"
+    t.string   "faculty_short"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "job_info_sessions", force: true do |t|
     t.string   "employer"
     t.datetime "start_time"
@@ -98,6 +106,12 @@ ActiveRecord::Schema.define(version: 20150417053134) do
     t.string   "student_type"
     t.string   "faculties"
     t.string   "location"
+  end
+
+  create_table "student_types", force: true do |t|
+    t.string   "student_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "universities", force: true do |t|

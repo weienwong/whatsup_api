@@ -4,7 +4,7 @@ class EventCategoriesController < ApplicationController
   # GET /event_categories
   # GET /event_categories.json
   def index
-    @event_categories = EventCategory.select("id, category_name")
+    @event_categories = EventCategory.select("id, category_name").order(:priority)
 
     pluralize_categories = []
 
