@@ -3,22 +3,19 @@ class JobInfoSession < ActiveRecord::Base
   def self.show_session_by_time(time)
     upcoming = JobInfoSession.where("start_time >= ?", DateTime.now)
     if time == 'today'
-      today_sessions = upcoming.where("start_time <= ?", DateTime.now.end_of_day)
-      return today_sessions.select(:employer, :start_time, :end_time, :location, :website, :education_level, :student_type, :faculties)
+      result = upcoming.where("start_time <= ?", DateTime.now.end_of_day)
 
     elsif time == 'week'
-      this_week_sessions = upcoming.where("start_time <= ?", DateTime.now.end_of_week)
-      return this_week_sessions.select(:employer, :start_time, :end_time, :location, :website, :education_level, :student_type, :faculties)
+      result = upcoming.where("start_time <= ?", DateTime.now.end_of_week)
 
     elsif time == 'month'
-      this_month_sessions = upcoming.where("start_time <= ?", DateTime.now.end_of_month)
-      return this_month_sessions.select(:employer, :start_time, :end_time, :location, :website, :education_level, :student_type, :faculties)
+      result = upcoming.where("start_time <= ?", DateTime.now.end_of_month)
 
     elsif time == 'later'
-      later_sessions = JobInfoSession.where("start_time >= ?", DateTime.now.end_of_month).where("start_time <= ?", DateTime.now.end_of_month  + 1.month)
-      return later_sessions.select(:id, :employer, :start_time, :end_time, :location, :website, :education_level, :student_type, :faculties)
+      result = JobInfoSession.where("start_time >= ?", DateTime.now.end_of_month).where("start_time <= ?", DateTime.now.end_of_month  + 1.month)
     end
 
+    return result.select(:id, :employer, :start_time, :end_time, :location, :website, :education_level, :student_type, :faculties)
   end
   
   # faculty can be one of the following:

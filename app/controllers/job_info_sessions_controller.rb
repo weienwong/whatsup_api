@@ -51,9 +51,6 @@ class JobInfoSessionsController < ApplicationController
     render json: result
   end
 
-
-
-
   # GET /job_info_sessions/1
   # GET /job_info_sessions/1.json
   def show
