@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   get '/job_info_sessions', to: 'job_info_sessions#index'
   get '/job_info_sessions/:id', to: 'job_info_sessions#show'
-
+  get 'job_info_sessions_count', to: 'job_info_sessions#job_info_sessions_count_by_time'
 
   get 'event_categories', to: 'event_categories#index'
   get 'universities', to: 'universities#index'

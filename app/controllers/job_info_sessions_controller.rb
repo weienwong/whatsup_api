@@ -4,7 +4,6 @@ class JobInfoSessionsController < ApplicationController
   # GET /job_info_sessions
   # GET /job_info_sessions.json
   def index
-
     time = ''
     faculty = ''
     student_type = ''
@@ -28,7 +27,6 @@ class JobInfoSessionsController < ApplicationController
     end
 
     render json: result
-
   end
 
   def show_info_session_by_time
@@ -50,6 +48,12 @@ class JobInfoSessionsController < ApplicationController
 
     render json: result
   end
+
+  def job_info_sessions_count_by_time
+    render json: JobInfoSession.job_info_session_time_period_count
+
+  end
+
 
   # GET /job_info_sessions/1
   # GET /job_info_sessions/1.json
