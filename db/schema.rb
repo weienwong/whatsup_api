@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150418223221) do
+ActiveRecord::Schema.define(version: 20150507182710) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -109,6 +109,24 @@ ActiveRecord::Schema.define(version: 20150418223221) do
     t.string   "logo_url"
   end
 
+  create_table "locations", force: true do |t|
+    t.string   "room"
+    t.string   "building_name"
+    t.string   "address"
+    t.string   "city"
+    t.string   "province"
+    t.string   "postal_code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "organizers", force: true do |t|
+    t.string   "org_name"
+    t.string   "org_website"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "student_types", force: true do |t|
     t.string   "student_type"
     t.datetime "created_at"
@@ -120,5 +138,44 @@ ActiveRecord::Schema.define(version: 20150418223221) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "university_event_categories", force: true do |t|
+    t.integer  "university_event_id"
+    t.integer  "event_category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "university_event_categories", ["event_category_id"], name: "index_university_event_categories_on_event_category_id", using: :btree
+  add_index "university_event_categories", ["university_event_id"], name: "index_university_event_categories_on_university_event_id", using: :btree
+
+  create_table "university_event_time_locations", force: true do |t|
+    t.integer  "university_event_id"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.integer  "location_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "university_event_time_locations", ["location_id"], name: "index_university_event_time_locations_on_location_id", using: :btree
+  add_index "university_event_time_locations", ["university_event_id"], name: "index_university_event_time_locations_on_university_event_id", using: :btree
+
+  create_table "university_events", force: true do |t|
+    t.string   "name"
+    t.text     "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "universtiy_event_organizers", force: true do |t|
+    t.integer  "university_event_id"
+    t.integer  "organizer_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "universtiy_event_organizers", ["organizer_id"], name: "index_universtiy_event_organizers_on_organizer_id", using: :btree
+  add_index "universtiy_event_organizers", ["university_event_id"], name: "index_universtiy_event_organizers_on_university_event_id", using: :btree
 
 end

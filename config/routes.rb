@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+#  resources :university_events, except: [:new, :edit]
 #  resources :student_types, except: [:new, :edit]
 #  resources :faculties, except: [:new, :edit]
 #  resources :job_info_sessions, except: [:new, :edit]
@@ -26,6 +27,8 @@ Rails.application.routes.draw do
 
   get 'student_types', to: 'student_types#index'
   get 'faculties', to: 'faculties#index'
+
+  get 'university_events', to: 'university_events#all_events'
 
   #  resources :events, except: [:new, :edit]
   # The priority is based upon order of creation: first created -> highest priority.
