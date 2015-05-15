@@ -2,18 +2,18 @@ class UniversityEventsController < ApplicationController
   before_action :set_university_event, only: [:show, :update, :destroy]
 
 
-  def all_events
-    render json: UniversityEvent.show_all_events_info
-
-  end
-
-
   # GET /university_events
   # GET /university_events.json
   def index
-    @university_events = UniversityEvent.all
+    site_id = params[:site_id]
+    category_id = params[:category_id]
+    time = params[:time]
 
-    render json: @university_events
+#    @university_events = UniversityEvent.all
+
+    result = UniversityEvent.show_events(site_id, category_id, time)
+
+    render json: result
   end
 
 
@@ -21,7 +21,9 @@ class UniversityEventsController < ApplicationController
   # GET /university_events/1
   # GET /university_events/1.json
   def show
-    render json: @university_event
+    result = @university_event.get_event_details()
+
+    render json: result
   end
 
   # POST /university_events
