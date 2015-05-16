@@ -104,19 +104,24 @@ class UniversityEvent < ActiveRecord::Base
 
     time_locations = self.university_event_time_locations.includes(:location)
 
+    sorted_time_locations = time_locations.sort {|a,b| a.start_time <=> b.start_time}
+
     when_where = []
 
-    time_locations.each do |tl|
-      when_where << {:start => tl.start_time, 
-                     :end => tl.end_time, 
-                     :building_name => tl.location.building_name,
-                     :room => tl.location.room,
-                     :address => tl.location.address,
-                     :city => tl.location.city,
-                     :province => tl.location.province
-      }
+    sorted_time_locations.each do |tl|
 
+      if tl.end_time >= DateTime.now.utc
+        when_where << {:start => tl.start_time, 
+                       :end => tl.end_time, 
+                       :building_name => tl.location.building_name,
+                       :room => tl.location.room,
+                       :address => tl.location.address,
+                       :city => tl.location.city,
+                       :province => tl.location.province
+        }
+      end
     end
+
 
     result = {
       :id => self.id,
@@ -128,7 +133,6 @@ class UniversityEvent < ActiveRecord::Base
     }
 
     return result
-
   end
 
 end

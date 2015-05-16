@@ -6,7 +6,7 @@ gem 'rails', '4.1.1'
 gem 'rails-api'
 
 gem 'spring', :group => :development
-gem 'pg', '~>0.13.2'
+gem 'pg' 
 
 #gem 'sqlite3'
 gem 'middleman-protect-emails'
