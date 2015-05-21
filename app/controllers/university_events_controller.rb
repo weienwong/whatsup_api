@@ -1,3 +1,5 @@
+require 'icalendar'
+
 class UniversityEventsController < ApplicationController
   before_action :set_university_event, only: [:show, :update, :destroy]
 
@@ -5,13 +7,9 @@ class UniversityEventsController < ApplicationController
   # GET /university_events
   # GET /university_events.json
   def index
-    site_id = params[:site_id]
     category_id = params[:category_id]
     time = params[:time]
-
-#    @university_events = UniversityEvent.all
-
-    result = UniversityEvent.show_events(site_id, category_id, time)
+    result = UniversityEvent.show_events(category_id, time)
 
     render json: result
   end
@@ -24,6 +22,16 @@ class UniversityEventsController < ApplicationController
     result = @university_event.get_event_details()
 
     render json: result
+  end
+
+  # POST /university_events/
+  def send_invite
+    uni_event_id = params[:uni_event_id]
+    email = params[:email_addr]
+
+    @university_event = UniversityEvent.find uni_event_id
+    @university_event.create_event_invite(email)
+
   end
 
   # POST /university_events

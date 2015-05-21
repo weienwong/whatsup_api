@@ -1,6 +1,14 @@
 class EventCategoriesController < ApplicationController
   before_action :set_event_category, only: [:show, :update, :destroy]
 
+  after_filter :cors_set_access_control_headers
+
+  def cors_set_access_control_headers
+    headers['Access-Control-Allow-Origin'] = '*'
+    headers['Access-Control-Allow-Methods'] = 'GET'
+    headers['Access-Control-Max-Age'] = "1728000"
+  end
+
   # GET /event_categories
   # GET /event_categories.json
   def index

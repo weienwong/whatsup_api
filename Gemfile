@@ -12,6 +12,12 @@ gem 'pg'
 gem 'middleman-protect-emails'
 gem 'uwaterlooapi', '~> 0.1.0'
 gem 'tilt', '~> 1.4.1'
+gem 'icalendar', '~> 2.3.0'
+gem 'mailgun_rails'
+gem 'rest-client'
+
+gem 'tzinfo'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

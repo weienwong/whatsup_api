@@ -18,11 +18,9 @@ Rails.application.routes.draw do
 #
 #  get '/events/', to: 'events#get_events_by_time'
 #
-  get '/job_info_sessions', to: 'job_info_sessions#index'
-  get '/job_info_sessions/:id', to: 'job_info_sessions#show'
   get 'job_info_sessions_count', to: 'job_info_sessions#job_info_sessions_count_by_time'
 
-  get 'event_categories', to: 'event_categories#index'
+#  get 'event_categories', to: 'event_categories#index'
   get 'universities', to: 'universities#index'
 
   get 'student_types', to: 'student_types#index'
@@ -33,8 +31,16 @@ Rails.application.routes.draw do
     get 'event_categories', to: 'event_category#index'
     get 'sites', to: 'site#index'
     
-    get 'university_events/:site_id/:category_id/:time', to: 'university_events#index'
+    get 'university_events/:category_id/:time', to: 'university_events#index'
+    
     get 'university_event/:id', to: 'university_events#show'
+
+    get 'faculties', to: 'faculties#index'
+    
+    get '/job_info_sessions', to: 'job_info_sessions#index'
+    get '/job_info_sessions/:id', to: 'job_info_sessions#show'
+
+    post '/university_event/send_invite/', to: 'university_events#send_invite'
 
 
   end
