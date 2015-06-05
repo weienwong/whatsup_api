@@ -54,6 +54,14 @@ class JobInfoSessionsController < ApplicationController
 
   end
 
+  def send_invite
+    job_info_id = params[:job_info_id]
+    email = params[:email]
+
+    @job_info_session = JobInfoSession.find(job_info_id) 
+    @job_info_session.create_job_info_session_invite(email)    
+  end
+
 
   # GET /job_info_sessions/1
   # GET /job_info_sessions/1.json
@@ -92,6 +100,7 @@ class JobInfoSessionsController < ApplicationController
 
     head :no_content
   end
+
 
   private
 

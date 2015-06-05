@@ -6,12 +6,18 @@ gem 'rails', '4.1.1'
 gem 'rails-api'
 
 gem 'spring', :group => :development
-gem 'pg', '~>0.13.2'
+gem 'pg' 
 
 #gem 'sqlite3'
 gem 'middleman-protect-emails'
 gem 'uwaterlooapi', '~> 0.1.0'
 gem 'tilt', '~> 1.4.1'
+gem 'icalendar', '~> 2.3.0'
+gem 'mailgun_rails'
+gem 'rest-client'
+
+gem 'tzinfo'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

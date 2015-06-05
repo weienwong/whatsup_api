@@ -268,7 +268,6 @@ class Event < ActiveRecord::Base
 
       end
 
-
       events_with_times = []
 
       result.each do |r|

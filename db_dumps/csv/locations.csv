@@ -1,0 +1,447 @@
+id,room,building_name,address,city,province,postal_code,created_at,updated_at
+945,,McMaster Innovation Park,175 Longwood Road South,Hamilton,ON,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+946,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+947,,University of Waterloo,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+948,Room 352,PHY - Physics,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+949,Room 241,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+950,Room 1304,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+951,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+952,Room 3142,EIT - Centre for Environmental and Information Technology,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+953,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+954,1301,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+955,Room 241,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+956,EC2-111,E2 - Engineering 2,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+957,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+958,Room 3142,EIT - Centre for Environmental and Information Technology,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+959,Room 3145,EIT building,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+960,Sun Life Financial Auditorium, LHS 1621,LHI - Lyle S. Hallman Institute for Health Promotion,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+961,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+962,Multipurpose Room,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+963,Main Hall,FED - Federation Hall,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+964,TransCanada Corp. LiveLink Facility, Room 3102,E5 - Engineering 5,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+965,MC 1078,MC - Mathematics & Computer Building,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+966,3052,E5 - Engineering 5,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+967,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+968,Cafeteria,REN - Renison University College,240 Westmount Road North,Waterloo,ON,N2L 3G4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+969,1301,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+970,Room 241,EV1 - Environment 1,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+971,Room 3145,EIT building,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+972,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+973,3142,EIT - Centre for Environmental and Information Technology,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+974,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+975,3102 - TransCanada Corp. LiveLink Facility,E5 - Engineering 5,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+976,Room 3102,E5 - Engineering 5,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+977,Bombshelter Pub,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+978,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+979,,&Company Resto Bar,295 Enfield Place,Mississauga,ON,L5B 3E5,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+980,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+981,2nd Floor,Levels Nightclub,On Hing Building, No.1 On Hing Terrace,Central, Hong Kong,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+982,Room 1506,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+983,1506,QNC,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+984,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+985,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+986,,Trillium Mutual Insurance building,495 Mitchell Road South,Listowel,ON,N4W 0C8,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+987,2022,E6,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+988,Lower Atrium,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+989,Lower Atrium,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+990,1301,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+991,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+992,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+993,,The Games Institute,175 Columbia St. West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+994,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+995,373,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+996,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+997,Room 373,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+998,Room 373,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+999,373,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1000,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1001,Student Design Centre (first floor),E5 - Engineering 5,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1002,Dunker Family Lounge,REN - Renison University College,240 Westmount Road North,Waterloo,ON,N2L 3G4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1003,Dunker Family Lounge (REN 1303),REN - Renison University College,240 Westmount Road North,Waterloo,ON,N2L 3G4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1004,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1005,,Ocho Hotel & Restaurant,195 Spadina Avenue,Toronto,ON,M5T 2C5,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1006,,Itamae Sushi,253 King Street North,Waterloo,ON,N2J 2Y8,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1007,Dunker Family Lounge (REN 1303),REN - Renison University College,240 Westmount Road North,Waterloo,ON,N2L 3G4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1008,The Great Hall,CGR - Conrad Grebel University,140 Westmount Road North,Waterloo,ON,N2L 3G6,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1009,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1010,The Great Hall,CGR - Conrad Grebel University,140 Westmount Road North,Waterloo,ON,N2L 3G6,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1011,Lawrence Cummings Lecture Theatre,ARC - School of Architecture,7 Melville Street South,Cambridge,ON,N1S 2H4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1012,4412,EV3 - Environment 3,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1013,1301,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1014,Great Hall,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1015,Room 241,EV1 - Environment 1,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1016,Room 4106-4128,E5 - Engineering 5,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1017,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1018,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1019,,E6-2024,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1020,Room 1302,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1021,Room 1302,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1022,1302,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1023,Main Hall,FED - Federation Hall,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1024,Humanities Theatre,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1025,,The Local Bar & Grill,Courtyard 4 (across from the West gate of 1949) Workers Stadium North Street,Chaoyang District,11,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1026,Lawrence Cummings Lecture Theatre,ARC - School of Architecture,7 Melville Street South,Cambridge,ON,N1S 2H4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1027,Lawrence Cummings Lecture Theatre,ARC - School of Architecture,7 Melville Street South,Cambridge,ON,N1S 2H4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1028,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1029,3026,PAS - Psychology, Anthropology, Sociology,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1030,Room 1001,ARC - School of Architecture,7 Melville Street South,Cambridge,ON,N1S 2H4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1031,3127,M3 - Mathematics 3,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1032,1301,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1033,Room 2003,ARC - School of Architecture,7 Melville Street South,Cambridge,ON,N1S 2H4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1034,,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1035,Room 373,HH - J.G. Hagey Hall of the Humanities,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1036,Room 241,EV1 - Environment 1,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1037,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1038,1301,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1039,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1040,1301,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1041,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1042,1201,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1043,Bombshelter Pub,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1044,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1045,Main Hall,FED - Federation Hall,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1046,Room 1302,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1047,Room 1302,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1048,Room 241,EV1 - Environment 1,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1049,Room 241,EV1 - Environment 1,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1050,Humanities Theatre,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1051,1214,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1052,Meeting Room 1,FED - Federation Hall,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1053,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1054,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1055,Room 241,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1056,Room 1008,PHR - School of Pharmacy,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1057,Bombshelter Pub,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1058,,Moose's Down Under Bar & Grill,830 West Pender Street,Vancouver,BC,V6C 1J8,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1059,4412,EV3 - Environment 3,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1060,Main Dining Room,UC - University Club,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1061,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1062,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1063,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1064,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1065,Room 5106,E5 building,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1066,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1067,Room 4412,EV3 - Environment 3,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1215,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1216,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1068,3127,M3 - Mathematics 3,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1069,Room 0101,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1070,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1071,Room 2143,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1072,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1073,,Loungeburger,270 14th Ave SE,Calgary,AB,T2G 0L3,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1074,2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1075,,Westland Distillery,2931 First Avenue South,Seattle,WA,98134,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1076,Theatre of the Arts,ML - Modern Languages,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1077,Theatre of the Arts,ML - Modern Languages,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1078,3026,PAS - Psychology, Anthropology, Sociology,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1079,Room 352,PHY - Physics,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1080,1301,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1081,Room 241,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1082,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1083,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1084,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1085,1-604-569-2494,Portland Craft,3835 Main Street,Vancouver,BC,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1086,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1087,,PAC - Physical Activities Complex,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1088,,Waterloo Wellington Flight Centre,Unit 3 4881 Fountain Street North,Breslau,ON,N0B 1M0,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1089,,REN - Renison University College,240 Westmount Road North,Waterloo,ON,N2L 3G4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1090,Humanities Theatre,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1091,,Hilton Lac-Leamy,3 Boulevard du Casino,Gatineau,QC,J8Y 6X4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1092,,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1093,Room 1201,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1094,MC 2009,MC - Mathematics & Computer Building,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1095,,SLC - Student Life Centre,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1096,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1097,Room 221,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1098,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1099,MC 1078,MC - Mathematics & Computer Building,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1100,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1101,Room 2218,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1102,1208,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1103,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1104,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1105,Supreme Court Building, Fourth Floor,Law Courts Inn Restaurant,800 Smithe Street,Vancouver,BC,V6Z 2E1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1106,Supreme Court Building, Fourth Floor,Law Courts Inn Restaurant,800 Smithe Street,Vancouver,BC,V6Z 2E1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1107,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1108,1301,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1109,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1110,Room 3142,EIT - Centre for Environmental and Information Technology,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1111,Room 221,EV1 - Environment 1,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1112,Humanities Theatre,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1113,4412,EV3 - Environment 3,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1114,4412,EV3 - Environment 3,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1115,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1116,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1117,,Games Institute (EC1, formerly known as BB1),175 Columbia Street West,Waterloo,ON,N2L5Z5,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1118,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1119,Green Room,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1120,Green Room,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1121,3127,M3 - Mathematics 3,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1122,Lawrence Cummings Lecture Theatre,ARC - School of Architecture,7 Melville Street South,Cambridge,ON,N1S 2H4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1123,Lawrence Cummings Lecture Theatre,ARC - School of Architecture,7 Melville Street South,Cambridge,ON,N1S 2H4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1124,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1125,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1126,Sun Life Auditorium, LHS 1621,LHI - Lyle S. Hallman Institute for Health Promotion,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1127,Sun Life Auditorium, LHS 1621,LHI - Lyle S. Hallman Institute for Health Promotion,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1128,Room 3142,EIT building,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1129,1502 and 2502,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1130,Meet at the Renison Parking Lot!,REN - Renison University College,240 Westmount Road North,Waterloo,ON,N2L 3G4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1131,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1132,Humanities Theatre,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1133,Humanities Theatre,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1134,329,Dana Porter Library,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1135,Room 241,EV1 - Environment 1,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1136,,University of Ottawa,,Ottawa,ON,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1137,Cafeteria,REN - Renison University College,240 Westmount Road North,Waterloo,ON,N2L 3G4,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1138,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1139,,Borealis Grille & Bar,4336 King Street East,Kitchener,ON,N2P 3W6,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1140,,DC Library Room 1568,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1141,Room 1208,TC - William M. Tatham Centre for Co-operative Education and Career Action (CECA),200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1142,East Campus 1,The Games Institute,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1143,,Colonel By C03,University of Ottawa,Ottawa,ON,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1144,Room 3142,EIT building,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1145,Sheridan Hall,Wycliffe College,5 Hoskins Ave,Toronto,ON,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1146,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1147,3026,PAS - Psychology, Anthropology, Sociology,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1148,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1149,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1150,Humanities Theatre,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1151,Humanities Theatre,HH - J.G. Hagey Hall of the Humanities,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1152,Room 241,EV1 - Environment 1,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1153,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1154,,FED - Federation Hall,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1155,,,,,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1156,Room 241,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1157,,,,Waterloo,,,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1158,,PAC - Physical Activities Complex,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1159,,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1160,Room 0101,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1161,Room 0101,IQC - Institute for Quantum Computing,475 Wes Graham Way,Waterloo,ON,N2L 6R2,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1162,Room 0101,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1163,0101,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1164,Room 1506,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1165,3026,PAS - Psychology, Anthropology, Sociology,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1166,Room 241,EV1 - Environment 1,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:02:01.982174,2015-05-11 17:02:01.982174
+1167,,McMaster Innovation Park,175 Longwood Road South,Hamilton,ON,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1168,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1169,,University of Waterloo,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1170,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1171,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1172,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1173,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1174,,&Company Resto Bar,295 Enfield Place,Mississauga,ON,L5B 3E5,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1175,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1176,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1177,,Trillium Mutual Insurance building,495 Mitchell Road South,Listowel,ON,N4W 0C8,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1178,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1179,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1180,,The Games Institute,175 Columbia St. West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1181,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1182,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1183,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1184,,Ocho Hotel & Restaurant,195 Spadina Avenue,Toronto,ON,M5T 2C5,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1185,,Itamae Sushi,253 King Street North,Waterloo,ON,N2J 2Y8,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1186,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1187,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1188,,E6-2024,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1189,,The Local Bar & Grill,Courtyard 4 (across from the West gate of 1949) Workers Stadium North Street,Chaoyang District,11,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1190,,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1191,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1192,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1193,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1194,,Moose's Down Under Bar & Grill,830 West Pender Street,Vancouver,BC,V6C 1J8,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1195,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1196,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1197,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1198,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1199,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1200,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1201,,Loungeburger,270 14th Ave SE,Calgary,AB,T2G 0L3,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1202,,Westland Distillery,2931 First Avenue South,Seattle,WA,98134,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1203,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1204,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1205,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1206,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1207,,PAC - Physical Activities Complex,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1208,,Waterloo Wellington Flight Centre,Unit 3 4881 Fountain Street North,Breslau,ON,N0B 1M0,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1209,,REN - Renison University College,240 Westmount Road North,Waterloo,ON,N2L 3G4,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1210,,Hilton Lac-Leamy,3 Boulevard du Casino,Gatineau,QC,J8Y 6X4,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1211,,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1212,,SLC - Student Life Centre,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1213,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1214,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1217,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1218,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1219,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1220,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1221,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1222,,Games Institute (EC1, formerly known as BB1),175 Columbia Street West,Waterloo,ON,N2L5Z5,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1223,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1224,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1225,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1226,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1227,,University of Ottawa,,Ottawa,ON,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1228,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1229,,Borealis Grille & Bar,4336 King Street East,Kitchener,ON,N2P 3W6,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1230,,DC Library Room 1568,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1231,,Colonel By C03,University of Ottawa,Ottawa,ON,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1232,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1233,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1234,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1235,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1236,,FED - Federation Hall,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1237,,,,,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1238,,,,Waterloo,,,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1239,,PAC - Physical Activities Complex,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1240,,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-11 17:29:17.929977,2015-05-11 17:29:17.929977
+1241,,McMaster Innovation Park,175 Longwood Road South,Hamilton,ON,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1242,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1243,,University of Waterloo,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1244,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1245,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1246,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1247,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1248,,&Company Resto Bar,295 Enfield Place,Mississauga,ON,L5B 3E5,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1249,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1250,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1251,,Trillium Mutual Insurance building,495 Mitchell Road South,Listowel,ON,N4W 0C8,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1252,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1253,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1254,,The Games Institute,175 Columbia St. West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1255,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1256,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1257,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1258,,Ocho Hotel & Restaurant,195 Spadina Avenue,Toronto,ON,M5T 2C5,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1259,,Itamae Sushi,253 King Street North,Waterloo,ON,N2J 2Y8,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1260,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1261,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1262,,E6-2024,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1263,,The Local Bar & Grill,Courtyard 4 (across from the West gate of 1949) Workers Stadium North Street,Chaoyang District,11,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1264,,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1265,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1266,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1267,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1268,,Moose's Down Under Bar & Grill,830 West Pender Street,Vancouver,BC,V6C 1J8,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1269,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1270,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1271,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1272,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1273,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1274,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1275,,Loungeburger,270 14th Ave SE,Calgary,AB,T2G 0L3,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1276,,Westland Distillery,2931 First Avenue South,Seattle,WA,98134,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1277,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1278,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1279,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1280,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1281,,PAC - Physical Activities Complex,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1282,,Waterloo Wellington Flight Centre,Unit 3 4881 Fountain Street North,Breslau,ON,N0B 1M0,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1283,,REN - Renison University College,240 Westmount Road North,Waterloo,ON,N2L 3G4,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1284,,Hilton Lac-Leamy,3 Boulevard du Casino,Gatineau,QC,J8Y 6X4,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1285,,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1286,,SLC - Student Life Centre,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1287,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1288,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1289,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1290,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1291,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1292,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1293,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1294,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1295,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1296,,Games Institute (EC1, formerly known as BB1),175 Columbia Street West,Waterloo,ON,N2L5Z5,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1297,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1298,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1299,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1300,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1301,,University of Ottawa,,Ottawa,ON,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1302,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1303,,Borealis Grille & Bar,4336 King Street East,Kitchener,ON,N2P 3W6,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1304,,DC Library Room 1568,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1305,,Colonel By C03,University of Ottawa,Ottawa,ON,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1306,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1307,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1308,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1309,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1310,,FED - Federation Hall,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1311,,,,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1312,,,,Waterloo,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1313,,PAC - Physical Activities Complex,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1314,,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1315,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 02:05:24.58009,2015-05-12 02:05:24.58009
+1316,,McMaster Innovation Park,175 Longwood Road South,Hamilton,ON,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1317,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1318,,University of Waterloo,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1319,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1320,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1321,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1322,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1323,,&Company Resto Bar,295 Enfield Place,Mississauga,ON,L5B 3E5,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1324,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1325,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1326,,Trillium Mutual Insurance building,495 Mitchell Road South,Listowel,ON,N4W 0C8,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1327,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1328,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1329,,The Games Institute,175 Columbia St. West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1330,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1331,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1332,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1333,,Ocho Hotel & Restaurant,195 Spadina Avenue,Toronto,ON,M5T 2C5,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1334,,Itamae Sushi,253 King Street North,Waterloo,ON,N2J 2Y8,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1335,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1336,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1337,,E6-2024,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1338,,The Local Bar & Grill,Courtyard 4 (across from the West gate of 1949) Workers Stadium North Street,Chaoyang District,11,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1339,,DC - William G. Davis Computer Research Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1340,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1341,,GH - Graduate House,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1342,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1343,,Moose's Down Under Bar & Grill,830 West Pender Street,Vancouver,BC,V6C 1J8,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1344,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1345,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1346,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1347,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1348,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1349,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1350,,Loungeburger,270 14th Ave SE,Calgary,AB,T2G 0L3,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1351,,Westland Distillery,2931 First Avenue South,Seattle,WA,98134,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1352,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1353,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1354,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1355,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1356,,PAC - Physical Activities Complex,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1357,,Waterloo Wellington Flight Centre,Unit 3 4881 Fountain Street North,Breslau,ON,N0B 1M0,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1358,,REN - Renison University College,240 Westmount Road North,Waterloo,ON,N2L 3G4,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1359,,Hilton Lac-Leamy,3 Boulevard du Casino,Gatineau,QC,J8Y 6X4,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1360,,QNC - Quantum Nano Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1361,,SLC - Student Life Centre,200 University Ave West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1362,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1363,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1364,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1365,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1366,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1367,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1368,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1369,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1370,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1371,,Games Institute (EC1, formerly known as BB1),175 Columbia Street West,Waterloo,ON,N2L5Z5,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1372,,EV1 - Environment 1,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1373,,DMS - Stratford Campus,125 St. Patrick Street,Stratford,ON,N5A 0C1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1374,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1375,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1376,,University of Ottawa,,Ottawa,ON,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1377,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1378,,Borealis Grille & Bar,4336 King Street East,Kitchener,ON,N2P 3W6,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1379,,DC Library Room 1568,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1380,,Colonel By C03,University of Ottawa,Ottawa,ON,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1381,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1382,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1383,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1384,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1385,,FED - Federation Hall,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1386,,,,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1387,,,,Waterloo,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1388,,PAC - Physical Activities Complex,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1389,,SLC - Student Life Centre,200 University Avenue West,Waterloo,ON,N2L 3G1,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767
+1390,,Dana Porter FLEX Lab (LIB 329),,,,,2015-05-12 03:35:10.433767,2015-05-12 03:35:10.433767

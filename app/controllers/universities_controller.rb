@@ -1,6 +1,8 @@
 class UniversitiesController < ApplicationController
   before_action :set_university, only: [:show, :update, :destroy]
 
+
+
   # GET /universities
   # GET /universities.json
   def index

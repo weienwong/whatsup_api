@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+#  resources :university_events, except: [:new, :edit]
 #  resources :student_types, except: [:new, :edit]
 #  resources :faculties, except: [:new, :edit]
 #  resources :job_info_sessions, except: [:new, :edit]
@@ -8,24 +9,40 @@ Rails.application.routes.draw do
 #  get 'events', to: 'events#index'
 
 #  post 'events', to: 'events#create'
-  get 'events/:id', to: 'events#show'
+#  get 'events/:id', to: 'events#show'
 #  patch 'events/:id', to: 'events#update'
 
-  get '/event_category/:id', to: 'events#show_event_by_category'
-
-  get '/event_category/:category_id/university/:university_id', to: 'events#get_events_by_category_and_university'
-
-  get '/events/', to: 'events#get_events_by_time'
-
-  get '/job_info_sessions', to: 'job_info_sessions#index'
-  get '/job_info_sessions/:id', to: 'job_info_sessions#show'
+#  get '/event_category/:id', to: 'events#show_event_by_category'
+#
+#  get '/event_category/:category_id/university/:university_id', to: 'events#get_events_by_category_and_university'
+#
+#  get '/events/', to: 'events#get_events_by_time'
+#
   get 'job_info_sessions_count', to: 'job_info_sessions#job_info_sessions_count_by_time'
 
-  get 'event_categories', to: 'event_categories#index'
+#  get 'event_categories', to: 'event_categories#index'
   get 'universities', to: 'universities#index'
 
   get 'student_types', to: 'student_types#index'
   get 'faculties', to: 'faculties#index'
+
+
+  scope '/api/v2' do
+
+    get 'event_categories', to: 'event_category#index'
+    get 'sites', to: 'site#index'
+    get 'faculties', to: 'faculties#index'
+    
+    get 'university_events/:category_id/:time', to: 'university_events#index'
+    get 'university_event/:id', to: 'university_events#show'
+    post '/uni_event_invite/', to: 'university_events#send_invite'
+    
+    get '/job_info_sessions', to: 'job_info_sessions#index'
+    get '/job_info_sessions/:id', to: 'job_info_sessions#show'
+    post '/job_info_invite/', to: 'job_info_sessions#send_invite'
+
+  end
+
 
   #  resources :events, except: [:new, :edit]
   # The priority is based upon order of creation: first created -> highest priority.
