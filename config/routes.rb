@@ -28,20 +28,18 @@ Rails.application.routes.draw do
 
 
   scope '/api/v2' do
+
     get 'event_categories', to: 'event_category#index'
     get 'sites', to: 'site#index'
+    get 'faculties', to: 'faculties#index'
     
     get 'university_events/:category_id/:time', to: 'university_events#index'
-    
     get 'university_event/:id', to: 'university_events#show'
-
-    get 'faculties', to: 'faculties#index'
+    post '/uni_event_invite/', to: 'university_events#send_invite'
     
     get '/job_info_sessions', to: 'job_info_sessions#index'
     get '/job_info_sessions/:id', to: 'job_info_sessions#show'
-
-    post '/university_event/send_invite/', to: 'university_events#send_invite'
-
+    post '/job_info_invite/', to: 'job_info_sessions#send_invite'
 
   end
 

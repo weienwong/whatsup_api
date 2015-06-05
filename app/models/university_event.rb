@@ -38,14 +38,14 @@ class UniversityEvent < ActiveRecord::Base
     when 'week'
       max_time = DateTime.now.end_of_week.utc.to_s
     when 'this_month'
-      max_time = DateTime.now.end_of_week.utc.to_s
+      max_time = DateTime.now.end_of_month.utc.to_s
     when 'next_month'
       min_time = DateTime.now.next_month.beginning_of_month.utc.to_s
       max_time = DateTime.now.next_month.end_of_month.utc.to_s
     end
 
     site_category_location_query = 
-      'SELECT 
+      'SELECT DISTINCT 
         university_events.id,
         university_events.name, 
         university_events.website, 
@@ -53,8 +53,7 @@ class UniversityEvent < ActiveRecord::Base
         university_event_time_locations.end_time, 
         locations.room, 
         locations.building_name,
-        sites.name AS organizer,
-        event_categories.category_name AS category
+        sites.name AS organizer
       FROM 
         public.university_event_categories, 
         public.university_event_time_locations, 
@@ -63,7 +62,10 @@ class UniversityEvent < ActiveRecord::Base
         public.locations, 
         public.sites
       WHERE 
-        university_event_categories.university_event_id = university_events.id AND
+        university_events.created_at = (
+            select max(university_events.created_at) from public.university_events
+          ) AND
+        university_event_categories.university_event_id = university_events.id AND 
         university_event_categories.event_category_id = event_categories.id AND
         university_event_time_locations.university_event_id = university_events.id AND
         university_event_time_locations.location_id = locations.id AND
@@ -72,20 +74,39 @@ class UniversityEvent < ActiveRecord::Base
         university_event_time_locations.end_time < \'' + max_time + '\''
     
       if category_id == '0'
-        new_query = site_category_location_query + 
-                    ' ORDER BY university_event_time_locations.start_time'
+        all_events_query = '
+          SELECT DISTINCT 
+            university_events.id, 
+            university_events.name, 
+            locations.room, 
+            locations.building_name, 
+            university_event_time_locations.start_time, 
+            university_event_time_locations.end_time, 
+            sites.name AS organizer, 
+            university_events.website
+          FROM 
+            public.university_events, 
+            public.university_event_time_locations, 
+            public.sites, 
+            public.locations
+          WHERE 
+            university_events.created_at = (
+                select max(university_events.created_at) from public.university_events
+              ) AND
+            university_events.site_id = sites.id AND
+            university_events.id = university_event_time_locations.university_event_id AND
+            university_event_time_locations.location_id = locations.id AND
 
-        return UniversityEventTimeLocation.find_by_sql(new_query)
+            university_event_time_locations.end_time >= \'' + min_time + '\' AND 
+            university_event_time_locations.end_time < \'' + max_time + '\'
+            ORDER BY university_event_time_locations.start_time'
+        return UniversityEventTimeLocation.find_by_sql(all_events_query)
       else
         new_query = site_category_location_query +
                     ' AND event_categories.id = ' + category_id + 
                     ' ORDER BY university_event_time_locations.start_time'
-
         return UniversityEventTimeLocation.find_by_sql(new_query)
-
       end
-    
-
   end
 
   def get_event_details
@@ -94,7 +115,7 @@ class UniversityEvent < ActiveRecord::Base
     current_time = DateTime.now.utc.to_s
     
     when_where_query = '
-      SELECT
+      SELECT DISTINCT 
       university_events.id,
       university_event_time_locations.start_time, 
       university_event_time_locations.end_time, 
@@ -112,7 +133,8 @@ class UniversityEvent < ActiveRecord::Base
       university_event_time_locations.university_event_id = university_events.id AND
       university_event_time_locations.end_time >= \'' + current_time  + '\'  AND
       locations.id = university_event_time_locations.location_id AND
-      university_events.id = ' + event_id  + ';'
+      university_events.id = ' + event_id  +         
+    'ORDER BY university_event_time_locations.start_time'
 
     when_where = UniversityEvent.find_by_sql(when_where_query)
 
@@ -121,7 +143,8 @@ class UniversityEvent < ActiveRecord::Base
               :description => self.description,
               :website => self.website,
               :organized_by => self.site.name,
-              :when_where => when_where}
+              :nearest_when_where => when_where[0],
+              :later_when_where => when_where[1..-1]}
 
     return result
   end
@@ -133,10 +156,10 @@ class UniversityEvent < ActiveRecord::Base
 
     cal_event = Icalendar::Event.new
 
-    cal_event.dtstart = Icalendar::Values::DateTime.new(event_details[:when_where][0].start_time.localtime)
-    cal_event.dtend = Icalendar::Values::DateTime.new(event_details[:when_where][0].end_time.localtime)
+    cal_event.dtstart = Icalendar::Values::DateTime.new(event_details[:nearest_when_where].start_time.localtime)
+    cal_event.dtend = Icalendar::Values::DateTime.new(event_details[:nearest_when_where].end_time.localtime)
     cal_event.summary = event_details[:name]
-    cal_event.location = event_details[:when_where][0].building_name + " " + event_details[:when_where][0].building_name
+    cal_event.location = event_details[:nearest_when_where].building_name + " " + event_details[:nearest_when_where].room
     
     cal.add_event(cal_event)
     cal.publish
@@ -144,14 +167,27 @@ class UniversityEvent < ActiveRecord::Base
     File.open("./ics/" + event_details[:id].to_s + ".ics", "w+") do |f|
       f.write(cal.to_ical)
     end
-    
-    RestClient.post "https://api:key-eafc5e70e6bcb71af6ba5d95c8132cf3"\
-      "@api.mailgun.net/v3/sandbox3af273bc6e66458f9b9a4015b7d3a28e.mailgun.org/messages",
-      :from => "WatsUp <mailgun@sandbox3af273bc6e66458f9b9a4015b7d3a28e.mailgun.org>",
-      :to => email_address,
-      :subject => event_details[:name],
-      :text => event_details[:name],
-      :attachment => File.open("./ics/" + event_details[:id].to_s + ".ics", "r")
+
+    begin
+      RestClient.post "https://api:key-eafc5e70e6bcb71af6ba5d95c8132cf3"\
+        "@api.mailgun.net/v3/sandbox3af273bc6e66458f9b9a4015b7d3a28e.mailgun.org/messages",
+        :from => "WatsUp <mailgun@sandbox3af273bc6e66458f9b9a4015b7d3a28e.mailgun.org>",
+        :to => email_address,
+        :subject => event_details[:name],
+        :text => "Event Name: " + event_details[:name] + "\n\n" + 
+                  "Start Time: " + event_details[:nearest_when_where].start_time.localtime.to_formatted_s(:long_ordinal) + "\n\n" +
+                  "End Time: " + event_details[:nearest_when_where].end_time.localtime.to_formatted_s(:long_ordinal) + "\n\n" +
+                  "Location: " + event_details[:nearest_when_where].building_name + " " + event_details[:nearest_when_where].room + "\n\n" +
+                  "Website: " + event_details[:website],
+
+        :attachment => File.open("./ics/" + event_details[:id].to_s + ".ics", "r")  
+
+    rescue => e
+      puts e
+
+    end
+
+  
   end
 
 end
