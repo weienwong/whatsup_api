@@ -62,11 +62,11 @@ class JobInfoSession < ActiveRecord::Base
     File.open("./ics/" + self.id.to_s + ".ics", "w+") do |f|
       f.write(cal.to_ical)
     end
+    
+    mailgun_url = ENV['MAILGUN_URL']
 
     begin
-      RestClient.post "https://api:key-eafc5e70e6bcb71af6ba5d95c8132cf3"\
-        "@api.mailgun.net/v3/sandbox3af273bc6e66458f9b9a4015b7d3a28e.mailgun.org/messages",
-        :from => "WatsUp <mailgun@sandbox3af273bc6e66458f9b9a4015b7d3a28e.mailgun.org>",
+      RestClient.post mailgun_url
         :to => email_address,
         :subject => self.employer + " Info Session",
         :text => "Event Name: " + self.employer + " Info Session" + "\n\n" +
